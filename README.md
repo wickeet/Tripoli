@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Soy el jefe de Enfermería en un hospital y organizar el turno de los enfermeros se me hace una tarea tediosa. Necesito una herramienta que me permita crearlos adecuadamente siguiendo las normas del convenio y con un reparto equitativo de las horas entre la plantilla. Además, hablando con parte de la plantilla, me han expresado su deseo de poder modificar su horario intercambiando entre sí los turnos, ya sea para poder compartir turno con alguien o para acumular más días de descanso seguidos.
+Soy el jefe de Enfermería en un hospital y organizar el turno de los enfermeros se me hace una tarea tediosa porque tiene que seguir varios criterios y con una plantilla extensa es difícil cuadrar todo. Necesito una herramienta que me permita crearlos adecuadamente siguiendo las normas del convenio y con un reparto equitativo de las horas entre la plantilla.
 
 ## Licencia
 
