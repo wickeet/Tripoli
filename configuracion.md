@@ -1,4 +1,4 @@
-#Configuraciones realizadas
+# Configuraciones realizadas
 
 ## Creación de par de claves y subida de clave pública a GitHub
 
