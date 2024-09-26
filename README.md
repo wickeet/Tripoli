@@ -11,6 +11,7 @@ Este proyecto está licenciado bajo la [MIT License](./LICENSE).
 ## Archivos adicionales
 
 Aquí se puede acceder al .gitignore [.gitignore](./.gitignore)
+
 [La configuración realizada](./configuracion.md)
 
 
