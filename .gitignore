@@ -1,0 +1,44 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de compilación
+*.class
+*.o
+*.so
+*.dll
+*.exe
+
+# Archivos de configuración de IDEs
+.vscode/
+
+# Archivos de log
+*.log
+
+# Dependencias instaladas por paquetes
+node_modules/
+__pycache__/
+
+# Archivos de Python virtualenv
+env/
+venv/
+
+# Archivos de salida de construcción
+dist/
+build/
+# Archivos de cobertura
+coverage/
+*.cover
+*.gcda
+*.gcno
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+
+# Archivos de empaquetamiento
+*.tar.gz
+*.zip
+*.rar
+
