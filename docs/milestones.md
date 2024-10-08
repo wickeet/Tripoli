@@ -1,9 +1,16 @@
 # Tripoli - Milestones
 
 ### [M0] Modelado del problema
-+ **Objetivo**: Descomponer y analizar las historias de usuario para identificar los elementos clave del dominio, tales como roles, reglas y restricciones. El objetivo es crear un modelo que represente fielmente el contexto y los procesos implicados en la gestión de turnos de enfermería.
-+ **Entregable**: Código que encapsule los elementos del dominio de forma clara y estructurada, reflejando las relaciones entre los actores (jefe de enfermería, enfermeros, etc.) y las reglas de negocio (horarios, nóminas, convenios).
-+ **Criterio de Validación**: La solución será considerada viable cuando el revisor la haya verificado y aprobado, asegurando que el modelo cubra adecuadamente todos los aspectos descritos en las historias de usuario.
++ **Objetivo**: Realizar un análisis exhaustivo de las Historias de Usuario (HU) para identificar y definir los elementos clave del dominio relacionados con la gestión de turnos de enfermería, estableciendo la metodología adecuada para su modelado y representación en el sistema. El objetivo es crear un modelo que represente fielmente el contexto y los procesos implicados en la gestión de turnos de enfermería.
++ **Entregable**:
+- Código que encapsule los elementos fundamentales del dominio, con clases que representen roles como Jefe de Enfermería, Enfermero, y otros elementos esenciales como Turno, Disponibilidad y Horario.
+- El código debe reflejar adecuadamente las relaciones entre estos elementos, incluyendo las normativas del convenio, como límites de horas semanales, descansos obligatorios, turnos nocturnos y festivos.
++ **Criterio de Validación**:
+- El modelo será considerado válido si refleja de manera precisa todas las entidades clave del dominio y sus relaciones correctamente implementadas en el código.
+- El diseño debe ser modular y extensible, permitiendo ajustes futuros para incorporar cambios en las normativas o en las reglas de asignación de turnos.
+- Se considera viable cuando las reglas del convenio, como los límites de horas o los descansos, están correctamente integradas en el modelo y pueden ser validadas mediante pruebas simples.
+- El código debe incluir ejemplos o pruebas que demuestren cómo las entidades interactúan, como un ejemplo de asignación de turnos a un grupo de enfermeros respetando las normativas del convenio.
+- La documentación debe incluir una descripción clara de cada entidad y su propósito dentro del dominio.
 + **HUs asociadas**: [HU001], [HU002], [HU003]
 
 ### [M1] Identificación de Reglas del Convenio
@@ -12,13 +19,7 @@
 + **Criterio de Validación**: El entregable será validado cuando el revisor lo haya verificado y aprobado, confirmando que incluye todas las normativas relevantes y que están correctamente documentadas y entendidas.
 + **HUs asociadas**: [HU001]
 
-### [M2] Análisis de Disponibilidad del Personal
-+ **Objetivo**: Recopilar la disponibilidad y preferencias de los enfermeros con respecto a sus turnos, considerando las preferencias sobre trabajar en determinados horarios, fines de semana o festivos. Se recopilarán estos datos a través de formularios o entrevistas para tener una visión completa de la situación de cada enfermero. El análisis también incluirá la capacidad para cubrir turnos urgentes o cambios de última hora.
-+ **Entregable**: Una base de datos o lista estructurada que detalle la disponibilidad y preferencias de cada enfermero de la plantilla, lo que permitirá alimentar el algoritmo de asignación de turnos.
-+ **Criterio de Validación**: El entregable será considerado válido cuando se haya recopilado la información completa de toda la plantilla, y el formato utilizado para la recopilación de datos sea aprobado por el revisor.
-+ **HUs asociadas**: [HU001], [HU002], [HU003]
-
-### [M3] Desarrollo de Algoritmo de Asignación de Turnos
+### [M2] Desarrollo de Algoritmo de Asignación de Turnos
 + **Objetivo**: Implementar un algoritmo que asigne turnos de manera automática, respetando las reglas del convenio laboral y las preferencias de los enfermeros, asegurando un reparto justo y equitativo de los turnos más demandados, como los nocturnos o festivos. El algoritmo debe optimizar la distribución de las horas de trabajo, garantizando que no se excedan los límites legales y que se mantenga un equilibrio en las cargas de trabajo entre los enfermeros.
 + **Entregable**: Código funcional del algoritmo de asignación de turnos, que será utilizado para gestionar los turnos de forma automática, considerando las reglas del convenio y la disponibilidad del personal.
 + **Criterio de Validación**: El algoritmo será validado mediante pruebas con conjuntos de datos de prueba, asegurando que se respetan las reglas del convenio y que el reparto de los turnos es justo. El entregable será considerado viable cuando el revisor apruebe los resultados de las pruebas.
