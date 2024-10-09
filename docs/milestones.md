@@ -5,11 +5,11 @@
 + **Entregable**:
 - Código que encapsule los elementos fundamentales del dominio, con clases que representen roles como Jefe de Enfermería, Enfermero, y otros elementos esenciales como Turno, Disponibilidad y Horario.
 - El código debe reflejar adecuadamente las relaciones entre estos elementos, incluyendo las normativas del convenio, como límites de horas semanales, descansos obligatorios, turnos nocturnos y festivos.
+- El código debe incluir ejemplos o pruebas que demuestren cómo las entidades interactúan, como un ejemplo de asignación de turnos a un grupo de enfermeros respetando las normativas del convenio.
 + **Criterio de Validación**:
 - El modelo será considerado válido si refleja de manera precisa todas las entidades clave del dominio y sus relaciones correctamente implementadas en el código.
 - El diseño debe ser modular y extensible, permitiendo ajustes futuros para incorporar cambios en las normativas o en las reglas de asignación de turnos.
 - Se considera viable cuando las reglas del convenio, como los límites de horas o los descansos, están correctamente integradas en el modelo y pueden ser validadas mediante pruebas simples.
-- El código debe incluir ejemplos o pruebas que demuestren cómo las entidades interactúan, como un ejemplo de asignación de turnos a un grupo de enfermeros respetando las normativas del convenio.
 - La documentación debe incluir una descripción clara de cada entidad y su propósito dentro del dominio.
 + **HUs asociadas**: [HU001], [HU002], [HU003]
 
