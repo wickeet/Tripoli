@@ -27,7 +27,7 @@
 
 ## Milestones Adicionales
 
-### [M4] Validación del Algoritmo en Casos Reales
+### [M3] Validación del Algoritmo en Casos Reales
 + **Objetivo**: Probar el algoritmo de asignación de turnos utilizando datos reales de los enfermeros y turnos del hospital, asegurando que el reparto sea justo y conforme al convenio. El foco estará en que el personal enfermero revise y valide los horarios generados por el algoritmo, garantizando que el reparto sea aceptado por los empleados y no solo por los gestores de turnos.
 + **Entregable**: Un informe detallado con los resultados de la validación, que incluya análisis sobre la equidad en el reparto de turnos, el cumplimiento de las normativas del convenio, y la aceptación del personal. El informe también deberá incluir cualquier ajuste en el algoritmo tras la retroalimentación con el personal.
 + **Criterio de Validación**: El informe será considerado válido cuando, además de la aprobación del revisor, se haya recogido el feedback de una muestra significativa del personal enfermero, confirmando que los horarios asignados cumplen con los requisitos del convenio y las preferencias del equipo.
