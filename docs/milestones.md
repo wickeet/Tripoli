@@ -1,12 +1,12 @@
 # Tripoli - Milestones
 
 ### [M0] Modelo del problema
-+ **Descripción**: Realizar un análisis exhaustivo de la HU001 para identificar y definir los elementos clave del dominio relacionados con la gestión de turnos de enfermería, estableciendo la metodología adecuada para su modelado y representación en el sistema. El objetivo es crear un modelo que represente fielmente el contexto y los procesos implicados en la gestión de turnos de enfermería.
-+ **Producto mínimamente viable**: Código que encapsule los elementos fundamentales del dominio, con clases que representen roles como Jefe de Enfermería, Enfermero, y otros elementos esenciales como Turno u Horario, donde se reflejen adecuadamente las relaciones entre estos y ejemplos de como interactúan entre ellos, por ejemplo la asignación de turnos a un grupo de enfermeros respetando las normativas del convenio.
++ **Descripción**: Realizar un análisis exhaustivo de la HU001 para identificar y definir los elementos clave del dominio relacionados con la gestión de turnos de enfermería. Se debe establecer una metodología que permita modelar y representar los procesos de gestión de turnos, roles, y restricciones del sistema, proporcionando una base sólida para el desarrollo futuro. El objetivo es crear un modelo flexible y ampliable que represente fielmente el contexto y los procesos implicados en la gestión de turnos de enfermería.
++ **Producto mínimamente viable**: Código que encapsule los elementos fundamentales del dominio, permitiendo la interacción entre roles como Jefe de Enfermería, Enfermero, y el proceso de la asignación de turnos.
 + **Requisitos para la Validación**:
 - El modelo será considerado válido si refleja de manera precisa todas las entidades clave del dominio y sus relaciones correctamente implementadas en el código.
 - El diseño debe ser modular y extensible, permitiendo ajustes futuros para incorporar cambios en las normativas o en las reglas de asignación de turnos.
-- Se considera viable cuando las reglas del convenio, como los límites de horas o los descansos, están correctamente integradas en el modelo y pueden ser validadas mediante pruebas simples.
+- Se considera viable cuando las reglas del convenio, como los límites de horas o los descansos, se puedan integrar con facilidad y puedan ser validadas con pruebas que representen casos reales.
 - La documentación debe incluir una descripción clara de cada entidad y su propósito dentro del dominio.
 
 ### [M1] Algoritmo de Asignación de Turnos
@@ -17,6 +17,6 @@
 ## Milestones Adicionales
 
 ## [M2] Producto mejorado con respecto a la versión requerida mínima
-+ **Descripción**:Teniendo en cuenta el producto ya creado, implementar características adicionales, como la posibilidad de intercambiar turnos entre enfermeros mientras este intercambio asegure que no se incumple la normativa del hospital ni el convenio, de forma que se ataje el problema mencionado en la HU003.
++ **Descripción**:Teniendo en cuenta el producto ya creado, implementar características adicionales, como la posibilidad de intercambiar turnos entre enfermeros si este intercambio asegura que no se incumple la normativa del hospital ni el convenio, de forma que se ataje el problema mencionado en la HU003.
 + **Producto mínimamente viable**: Código funcional que permita el intercambio de turnos entre los enfermeros considerando las reglas del convenio y que complemente lo desarrollado anteriormente.
 + **Criterio de Validación**: El código será validado mediante pruebas con situaciones simuladas, asegurando que se respetan las reglas del convenio. El entregable será considerado viable cuando el revisor apruebe los resultados de las pruebas.
