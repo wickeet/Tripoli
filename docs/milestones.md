@@ -25,9 +25,11 @@
 + **Criterio de Validación**: El algoritmo será validado mediante pruebas con conjuntos de datos de prueba, asegurando que se respetan las reglas del convenio y que el reparto de los turnos es justo. El entregable será considerado viable cuando el revisor apruebe los resultados de las pruebas.
 + **HUs asociadas**: [HU001], [HU002], [HU003]
 
-### [M4] Validación del Algoritmo con Datos Reales
-+ **Objetivo**: Probar el algoritmo utilizando datos reales de los enfermeros y los turnos del hospital, asegurando que el reparto sea justo y conforme al convenio.Realizar pruebas del algoritmo de asignación de turnos utilizando datos reales de los enfermeros y los turnos del hospital, verificando que el reparto de turnos sea justo, equitativo y en conformidad con el convenio. El objetivo es asegurar que el algoritmo funcione correctamente en un entorno real, y que los resultados sean aceptados tanto por el personal como por los gestores de turnos.
-+ **Entregable**: Un informe detallado que recoja los resultados de la validación con datos reales, incluyendo análisis de la equidad en el reparto de turnos, cumplimiento de las normativas y ajuste a las preferencias del personal. El informe también incluirá cualquier ajuste o mejora realizada en el algoritmo como resultado de la validación.
-+ **Criterio de Validación**: El informe será considerado válido cuando el revisor lo apruebe, confirmando que el algoritmo cumple con los objetivos establecidos y se ajusta a los requisitos del convenio y las preferencias del personal.
+## Milestones Adicionales
+
+### [M4] Validación del Algoritmo en Casos Reales
++ **Objetivo**: Probar el algoritmo de asignación de turnos utilizando datos reales de los enfermeros y turnos del hospital, asegurando que el reparto sea justo y conforme al convenio. El foco estará en que el personal enfermero revise y valide los horarios generados por el algoritmo, garantizando que el reparto sea aceptado por los empleados y no solo por los gestores de turnos.
++ **Entregable**: Un informe detallado con los resultados de la validación, que incluya análisis sobre la equidad en el reparto de turnos, el cumplimiento de las normativas del convenio, y la aceptación del personal. El informe también deberá incluir cualquier ajuste en el algoritmo tras la retroalimentación con el personal.
++ **Criterio de Validación**: El informe será considerado válido cuando, además de la aprobación del revisor, se haya recogido el feedback de una muestra significativa del personal enfermero, confirmando que los horarios asignados cumplen con los requisitos del convenio y las preferencias del equipo.
 + **HUs asociadas**: [HU001], [HU002]
 
