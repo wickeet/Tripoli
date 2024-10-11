@@ -4,7 +4,7 @@
 + **Descripción**: Realizar un análisis exhaustivo de la HU001 para identificar y definir los elementos clave del dominio relacionados con la gestión de turnos de enfermería. Se debe establecer una metodología que permita modelar y representar los procesos de gestión de turnos, roles, y restricciones del sistema, proporcionando una base sólida para el desarrollo futuro. El objetivo es crear un modelo flexible y ampliable que represente fielmente el contexto y los procesos implicados en la gestión de turnos de enfermería.
 + **Producto mínimamente viable**: Código que encapsule los elementos fundamentales del dominio, permitiendo la interacción entre roles como Jefe de Enfermería, Enfermero, y el proceso de la asignación de turnos.
 + **Requisitos para la Validación**:
-- El diseño debe ser modular y extensible, permitiendo ajustes futuros para incorporar cambios en las normativas o en las reglas de asignación de turnos.
+- El diseño debe seguir buenas prácticas de diseño y programación, permitiendo ajustes futuros para incorporar cambios en las normativas o en las reglas de asignación de turnos.
 - Se considera validado mediante pruebas con conjuntos de datos de prueba, asegurando una correcta asignación de turnos.
 
 ### [M1] Algoritmo de Asignación de Turnos
