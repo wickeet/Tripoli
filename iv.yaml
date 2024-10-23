@@ -1,2 +1,2 @@
 lenguaje: go
-entidad: hospital.go
+entidad: internal/enfermeria.go
