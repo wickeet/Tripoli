@@ -19,7 +19,6 @@ type Disponibilidad struct {
 }
 
 type Enfermero struct {
-	ID               int
 	Nombre           string
 	Apellidos        string
 	Rol              string
