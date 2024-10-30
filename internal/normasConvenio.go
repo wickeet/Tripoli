@@ -3,7 +3,7 @@ package internal
 import "time"
 
 type NormasConvenio struct {
-	MaxHorasSemanales float64
-	MaxDiasSeguidos   int
-	FechasFestivas    []time.Time
+	maxHorasSemanales float64
+	maxDiasSeguidos   int
+	fechasFestivas    []time.Time
 }
