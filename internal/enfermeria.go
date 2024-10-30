@@ -1,6 +1,5 @@
 package internal
 
 type Enfermeria struct {
-	Plantilla []Enfermero
-	Turnos    []Turno
+	turnos map[*Enfermero][]Turno
 }
