@@ -2,26 +2,16 @@ package internal
 
 import "time"
 
-type PeriodoTiempo struct {
-	DiaSemana  time.Weekday
-	HoraInicio time.Time
-	HoraFin    time.Time
-}
-
-type PeriodoFecha struct {
-	FechaInicio time.Time
-	FechaFin    time.Time
+type Enfermero struct {
+	nombre    string
+	apellidos string
+	rol       string
 }
 
 type Disponibilidad struct {
-	HorariosDisponibles    []PeriodoTiempo
-	FechasIndisponibilidad []PeriodoFecha
+	diasTrabajo map[*Enfermero][]time.Weekday
 }
 
-type Enfermero struct {
-	Nombre           string
-	Apellidos        string
-	Rol              string
-	TurnosPreferidos []PeriodoTiempo
-	Disponibilidad   Disponibilidad
+type Preferencias struct {
+	turnosPreferidos map[*Enfermero][]Turno
 }
