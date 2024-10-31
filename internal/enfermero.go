@@ -8,10 +8,6 @@ type Enfermero struct {
 	rol       string
 }
 
-type Disponibilidad struct {
-	diasTrabajo map[*Enfermero][]time.Weekday
-}
+type TurnosPreferidos map[*Enfermero][]Turno
 
-type Preferencias struct {
-	turnosPreferidos map[*Enfermero][]Turno
-}
+type DiasTrabajo map[*Enfermero][]time.Weekday
