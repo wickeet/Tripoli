@@ -11,3 +11,5 @@ type Enfermero struct {
 type TurnosPreferidos map[*Enfermero][]Turno
 
 type DiasTrabajo map[*Enfermero][]time.Weekday
+
+type TurnosAsignados map[*Enfermero][]Turno
