@@ -1,26 +1,23 @@
 # Gestor de Tareas
 
-El gestor de tareas escogido para este proyecto será [`Make`](../Makefile) por los siguientes motivos:
+Los criterios para determinar cual es el gestor de tareas más adecuado son las siguientes:
 
-1. **Simplicidad y un Estándar Amplio**  
-    Es una herramienta clásica ampliamente conocida, con soporte nativo en la mayoría de sistemas Unix/Linux y suele estar preinstalada, eliminando la necesidad de configurar herramientas adicionales en estos sistemas.
-    Otros como Task o Mage, requieren de una instalación como herramienta adicional.
+## 1. Lenguaje del propio gestor
+El lenguaje o formato del archivo de configuración tiene que ser legible y fácil de mantener. Gestores con lenguajes muy complejos o que sean tediosos
+pueden llevar a dificultar en vez de facilitar la tarea de la automatización.
 
-2. **Eficiencia**  
-    Make solo ejecuta las tareas necesarias, es decir, para compilar un programa solo recompilará los archivos que hayan cambiado, basándose en timestamps, haciéndolo ideal para proyectos grandes donde no es eficiente reconstruir todo desde cero.
-    Aunque Task realiza esto, lo hace de forma distinta. Mientras que Make se basa en timestamps por lo que se hace implícitamente, en Task hay que especificarlo usando la regla `sources`, necesitando una configuración manual en vez de automatizada.
+## 2. Escalabilidad
+El gestor tiene que ser capaz de manejar un número creciente de tareas y dependencias sin volverse difícil de mantener. A cuanto más se progrese en el
+proyecto, mayor será su tamaño y complejidad por lo que tiene que poderse mantener comodamente.
 
-3. **Independencia del lenguaje**  
-    En cualquier proyecto real no se usa un único lenguaje de programación, por lo que Make es una herramienta fantástica ya que es independiente del lenguaje y es muy útil para cualquier lenguaje o tecnología que se quiera gestionar.
-    Otros gestores como Mage, hasta para las tareas más sencillas depende de escribir código Go para ello.
+## 3. Mantenimiento y Frecuencia de Actualizaciones
+La herramienta debe de ser mantenida activamente y recibe actualizaciones frecuentes para garantizar compatibilidad futura y la corrección de errores,
+y que esta no quede obsoleta.
 
-4. **Extensibilidad**  
-    Make se puede combinar con otras herramientas o se pueden incluir variables y scripts personalizados adaptándose muy bien a lo que necesite el proyecto, incluso ejecutando órdenes de shell directamente.
-    Otros gestores como Goreleaser están enfocados en manejar despliegues, siendo incapaces de gestionar tareas como las pruebas o la limpieza.
+## 4. Tolerancia a Errores
+La herramienta debe manejar errores en la ejecución de tareas. Es importante que se detenga ante fallos críticos o que continue bajo condiciones específicas,
+según se especifique
 
-5. **Compatibilidad Multiplataforma**  
-    Funciona en la mayoría de Sistemas Operativos y con herramientas como GNU Make, se puede usar en Windows.
-
-6. **Documentación y Comunidad**  
-    Tiene una extensa documentación y una comunidad activa, por lo que encontrar soporte o ejemplos es relativamente sencillo.
-    Otros como Mage ya no ofrece soporte, o la comunidad es mucho más pequeña, como Just, haciendo que encontrar soluciones a problemas que puedan surgir puede ser más tedioso.
+## 5. Soporte Multiplataforma
+Hay que asegurarse de que el gestor funcione sin problemas en diferentes sistemas operativos (Windows, macOS, Linux), y que las tareas configuradas sean portables
+entre ellos sin necesidad de modificaciones significativas. Todo esto busca poder migrar el trabajo entre dispositivos sin grandes molestias.
