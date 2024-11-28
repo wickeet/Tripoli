@@ -16,8 +16,4 @@ y que esta no quede obsoleta.
 
 ## 4. Tolerancia a Errores
 La herramienta debe manejar errores en la ejecución de tareas. Es importante que se detenga ante fallos críticos o que continue bajo condiciones específicas,
-según se especifique
-
-## 5. Soporte Multiplataforma
-Hay que asegurarse de que el gestor funcione sin problemas en diferentes sistemas operativos (Windows, macOS, Linux), y que las tareas configuradas sean portables
-entre ellos sin necesidad de modificaciones significativas. Todo esto busca poder migrar el trabajo entre dispositivos sin grandes molestias.
+según se especifique.
