@@ -1,0 +1,15 @@
+version: '3'
+
+vars:
+    project_dir: '{{.TASKFILE_DIR}}'
+
+tasks:
+    check:
+        cmds:
+            - echo "Comprobando sintaxis..."
+            - go fmt {{.project_dir}}/...
+
+    test:
+        cmds:
+            - echo "Realizando tests..."
+            - go test {{.project_dir}}/...

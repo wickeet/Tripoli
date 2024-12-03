@@ -1,5 +1,5 @@
 lenguaje: go
 entidad: internal/enfermero.go
 automatizar:
-  fichero: Makefile
-  orden: make
+  fichero: Taskfile
+  orden: task
