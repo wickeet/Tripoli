@@ -9,14 +9,13 @@ Soy el jefe de Enfermería en un hospital y organizar el turno de los enfermeros
 
 ## Gestor de dependencias
 [Go Modules](go.mod)
-[Justificación de la elección](docs/gestor_dependencias.md)
 
 ## Tareas automatizadas
-- **make test**: realizar los tests que en un futuro se implementarán para probar nuestro código y considerar que es viable.
-- **make check**: comprobar la sintaxis del código realizado para considerar que es viable.
+- **task test**: realizar los tests que en un futuro se implementarán para probar nuestro código y considerar que es viable.
+- **task check**: comprobar la sintaxis del código realizado para considerar que es viable.
   
 ## Gestor de tareas
-[Makefile](Makefile)
+[Task](Taskfile)
 [Justificación de la elección](docs/gestor_tareas.md)
 
 ## Licencia
