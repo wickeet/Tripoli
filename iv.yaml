@@ -1,5 +1,5 @@
 lenguaje: go
 entidad: internal/enfermero.go
 automatizar:
-  fichero: Taskfile
+  fichero: Taskfile.yml
   orden: task
