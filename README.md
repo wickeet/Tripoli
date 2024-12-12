@@ -7,6 +7,19 @@ Soy el jefe de Enfermería en un hospital y organizar el turno de los enfermeros
 - [User Stories](docs/user_stories.md)
 - [Milestones](docs/milestones.md)
 
+## Gestor de dependencias
+**Go Modules**
+
+[Dependencias indicadas aquí](go.mod)
+
+## Tareas automatizadas
+- **make test**: realizar los tests que en un futuro se implementarán para probar nuestro código y considerar que es viable.
+- **make check**: comprobar la sintaxis del código realizado para considerar que es viable.
+  
+## Gestor de tareas
+[Make](Makefile)
+[Justificación de la elección](docs/gestor_tareas.md)
+
 ## Licencia
 
 Este proyecto está licenciado bajo la [MIT License](./LICENSE).
