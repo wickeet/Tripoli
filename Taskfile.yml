@@ -1,15 +1,12 @@
 version: '3'
 
-vars:
-    project_dir: '{{.TASKFILE_DIR}}'
-
 tasks:
     check:
         cmds:
             - echo "Comprobando sintaxis..."
-            - go fmt {{.project_dir}}/...
+            - gofmt -e {{.TASKFILE_DIR}}/...
 
     test:
         cmds:
             - echo "Realizando tests..."
-            - go test {{.project_dir}}/...
+            - go test {{.TASKFILE_DIR}}/...
