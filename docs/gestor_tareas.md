@@ -2,66 +2,47 @@
 
 Los criterios para determinar cual es el gestor de tareas más adecuado son las siguientes:
 
-## 1. Lenguaje del propio gestor
-El lenguaje o formato del archivo de configuración tiene que ser legible y fácil de mantener. Gestores con lenguajes muy complejos o que sean tediosos
-pueden llevar a dificultar en vez de facilitar la tarea de la automatización.
+1. Mantenibilidad
 
-## 2. Mantenimiento y Frecuencia de Actualizaciones
-La herramienta debe de ser mantenida activamente y recibe actualizaciones frecuentes para garantizar compatibilidad futura y la corrección de errores,
-y que esta no quede obsoleta.
+Un proyecto que no sea mantenido y actualizado con regularidad puede llevar a deuda técnica, si luego por problemas de rendimiento
+o de errores no solucionados tenemos que cambiar a otro gestor de tareas. Aquí también influirá la madurez del proyecto, tal vez la
+herramienta no reciba actualizaciones tan asiduas, pero si está muy establecida y es más reconocida por la comunidad también se le puede
+considerar una herramienta candidata.
 
-## 3. Tolerancia a Errores
-La herramienta debe manejar errores en la ejecución de tareas. Es importante que se detenga ante fallos críticos o que continue bajo condiciones específicas,
-según se especifique.
+2. Integración con el lenguaje
+
+El gestor de tareas tiene que integrarse con el ecosistema y las herramientas Go, siendo capaz de ejecutar y gestionar tareas específicas
+como compilar (go build) o el análisis de dependencias (go mod).
+Algunos gestores que son específicos de otros lenguajes no serán capaces de realizar estas tareas y por tanto no serán aptos.
+
+3. Simplicidad
+
+Una vez comprobados los otros criterios, el objetivo principal del gestor de tareas es facilitar la gestión, y como es imposible que el
+desarrollador tenga experiencia en todos los gestores y la tarea del gestor es simplificar las operaciones cotidianas, no complicarlas.
+Tal vez decidir si algo es simple o no, se basa en la práctica o experiencia personal, pero valorar si algo es más complicado que otro o comparar las curvas de dificultad no lo es. Lo idóneo sería comparar entre sí los gestores que cumplan los requisitos anteriores, siendo este en cierta manera una criba final.
+
+
 
 # Posibles Candidatos a elección
 
-# Task
+## Task
+Task es un proyecto con actualizaciones frecuentes y es valorado positivamente, como se puede ver en su [repositorio](https://github.com/go-task/task/). Al estar diseñado para usarse con Go, tiene una integración excelente y puedes definir las tareas directamente en el archivo de configuración YAML.
 
-## 1.
-Task usa un archivo YAML (Taskfile.yml) que es fácil de leer y de mantener gracias a que tiene un formato simple y estructurado.
-## 2.
-Se mantiene regularmente en su [repositorio](https://github.com/go-task/task/tree/main) y tiene actualizaciones regulares.
-## 3.
-Proporciona opciones para manejar errores, como especificar si una tarea debe detenerse al fallar o continuar con otras dependencias.
+## Make
+Aunque no reciba actualizaciones constantes, Make lleva siendo utilizada desde hace décadas y se considera una herramienta estable y con muchos usuarios. Al ser una herramienta más general, no tiene una integración específica para Go y por tanto habría que realizar scripts personalizados para cada tarea.
 
-# Make
+## Mage
+Mage no tiene actualizaciones constantes, con largos períodos de inactividad en su [repositorio](https://github.com/magefile/mage), lo que genera ciertas dudas sobre si la herramienta puede llegar a quedarse desactualizada en un período corto de tiempo, suponiendo un problema. Por parte de la integración, utiliza el propio Go para definir las tareas, lo que facilita mucho la tarea.
 
-## 1.
-Utiliza archivos Makefile, cuyo formato no es extremadamente complejo pero hay que prestar especial atención a las tabulaciones y otras reglas.
-## 2.
-Make es una herramienta estable aunque su desarrollo no es tan activo porque ya cubre un amplio rango de casos.
-## 3.
-Puede detenerse en caso de errores o seguir adelante, dependiendo de cómo se especifiquen las reglas.
+## Just
+Como se puede observar en el [repositorio](https://github.com/casey/just), Just recibe correcciones y actualizaciones regularmente, además de una gran valoración de su repositorio. Al igual que Make, no tiene una integración específica para Go y va a necesitar de scripts específicos para las tareas.
 
-# Mage
+## Task-Ninja
+Aunque el [repositorio](https://github.com/RikunjSindhwad/Task-Ninja) recibe actualizaciones regulares, es un proyecto reciente y no tan maduro como otras opciones contempladas anteriormente, lo que podría llevar a encontrar errores no identificados con más facilidad. Al ser más general, le ocurrirá lo mismo que a Mage y Make.
 
-## 1.
-Utiliza Go puro para definir tareas, lo que lo hace muy flexible, aunque puede ser menos legible si no estás familiarizados con Go (no lo estoy).
-## 2.
-Llevaba más de un año sin actualizarse su [repositorio](https://github.com/magefile/mage) hasta hace una semana. Aún así esto es un indicio que el mantenimiento no es regular.
-## 3.
-Como es Go puro, permite manejar errores directamente en el código con un control detallado.
-
-# Goreleaser
-
-## 1.
-También basa en un archivo YAML para la configuración, lo cual es simple y legible. Sin embargo, está enfocado principalmente en la distribución de aplicaciones y no en la ejecución general de tareas.
-## 2.
-Es una herramienta muy activa, con actualizaciones regulares en su [repositorio](https://github.com/goreleaser/goreleaser).
-## 3.
-Maneja errores en pasos específicos, deteniendo o reportando problemas según el caso.
-
-# Just
-
-## 1.
-Utiliza archivos de configuración (Justfile) con una sintaxis inspirada en Makefile pero algo más legible, lo que facilita su uso.
-
-## 2.
-Es una herramienta con actualizaciones frecuentes y una comunidad activa en su [repositorio](https://github.com/casey/just).
-
-## 3.
-Permite manejar errores de forma similar a make.
+## Grunt
+Aunque el [repositorio](https://github.com/gruntjs/grunt) está muy valorado y recibe actualizaciones asiduamente, el problema que tiene este gestor es que tiene nula integración con Go, descartándolo completamente de este proceso de selección.
 
 # Elección final
-Siguiendo los criterios establecidos y comparandolos entre sí, he llegado a la conclusión de que la herramienta que mejores valoraciones ha tenido en cada ámbito en general ha sido Task y será el gestor que se usará en el proyecto.
+
+Tras haber visto las distintas opciones, las dos opciones más viables serían Task y Mage. Si bien teniendo el último requisito tal vez Mage sea mejor, porque no requiere que el desarrollador no aprenda nada nuevo al usar el propio Go, el tener una mantenabilidad pobre y que el archivo YAML de Task es sencillo, se ha decidido que la herramienta escogida sea Task.
